@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(38, 37, 37);
+    font-family: 'Poppins', sans-serif;
+}
+
+#container {
+    padding: 2rem;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: transform 2s ease-out;
+    width: 90%;
+    max-width: 1000px;
+    gap: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+#box {
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    align-items: center;
+}
+
+.boxes {
+    width: 60%;
+    min-width: 200px;
+    min-height: 200px;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    transition: .4s ease-in-out;
+    cursor: pointer;
+}
+
+.boxes:hover {
+    transform: translateY(-10px);
+}
+
+.red {
+    background-color: red;
+    box-shadow: 2px 2px 6px rgb(219, 34, 34);
+}
+
+.green {
+    background-color: green;
+    box-shadow: 2px 2px 6px rgb(26, 195, 26);
+}
+
+.blue {
+    background-color: blue;
+    box-shadow: 2px 2px 6px rgb(38, 38, 235);
+}
+
+.orange {
+    background-color: orange;
+    box-shadow: 2px 2px 6px rgb(218, 151, 26);
+}
+
+button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 1rem;
+    background-color: rgb(168, 165, 165);
+    transition: ease 0.3s;
+    box-shadow: 2px 2px 2px grey;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+}
+
+button:hover {
+    background-color: rgb(158, 156, 156);
+    cursor: pointer;
+    transform: translateY(-5px);
+    box-shadow: 5px 5px 5px grey;
+}
+
+#resultContainer {
+    width: 100%;
+    max-width: 300px;
+    padding: 1rem;
+    background-color: antiquewhite;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+@media (max-width: 600px) {
+    #container {
+        padding: 1rem;
+        gap: 1rem;
+    }
+
+    .boxes {
+        min-height: 60px;
+        font-size: 1rem;
+    }
+
+    button {
+        width: 100%;
+        padding: 0.8rem;
+        font-size: 1rem;
+    }
+
+    #resultContainer {
+        max-width: 100%;
+        font-size: 0.9rem;
+    }
+}
