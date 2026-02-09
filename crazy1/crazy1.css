@@ -36,7 +36,8 @@ html {
     padding: 2rem;
     width: 100%;
     align-items: center;
-    overflow: scroll;
+    overflow-x: hidden;
+    overflow-x: auto;
 }
 
 #box::-webkit-scrollbar {
@@ -112,6 +113,7 @@ button {
     padding: 1rem 3rem;
     font-size: 1rem;
     border: none;
+    outline: none;
     border-radius: 1rem;
     background-color: rgb(168, 165, 165);
     transition: ease 0.3s;

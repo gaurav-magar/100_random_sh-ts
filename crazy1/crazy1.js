@@ -33,6 +33,7 @@ else {
     }
 }
 function spins() {
+    document.getElementById("spinButton").innerHTML = "Spin Again!!!"
     const index = Math.floor(Math.random() * options.length);
 
     let resultBox = document.getElementById("resultContainer");
@@ -56,7 +57,6 @@ function spins() {
     setTimeout(() => {
         document.querySelector(".hide").classList.toggle("show");
         document.getElementById("result").innerHTML = options[index];
-        console.log(`index: ${index}, result: ${options[index]}`)
-
     }, 6000);
+
 }
