@@ -32,8 +32,15 @@ html {
 #box {
     display: flex;
     gap: 2rem;
+    height: auto;
+    padding: 2rem;
     width: 100%;
     align-items: center;
+    overflow: scroll;
+}
+
+#box::-webkit-scrollbar {
+    display: none;
 }
 
 .boxes {
@@ -58,22 +65,47 @@ html {
 
 .red {
     background-color: red;
-    box-shadow: 2px 2px 6px rgb(219, 34, 34);
+    box-shadow: 0 0 12px rgba(255, 0, 0, 0.8);
 }
 
 .green {
     background-color: green;
-    box-shadow: 2px 2px 6px rgb(26, 195, 26);
+    box-shadow: 0 0 12px rgba(0, 128, 0, 0.8);
 }
 
 .blue {
     background-color: blue;
-    box-shadow: 2px 2px 6px rgb(38, 38, 235);
+    box-shadow: 0 0 12px rgba(0, 0, 255, 0.8);
 }
 
 .orange {
     background-color: orange;
-    box-shadow: 2px 2px 6px rgb(218, 151, 26);
+    box-shadow: 0 0 12px rgba(255, 165, 0, 0.8);
+}
+
+.purple {
+    background-color: purple;
+    box-shadow: 0 0 12px rgba(128, 0, 128, 0.8);
+}
+
+.navy {
+    background-color: navy;
+    box-shadow: 0 0 12px rgba(0, 0, 128, 0.8);
+}
+
+.maroon {
+    background-color: maroon;
+    box-shadow: 0 0 12px rgba(128, 0, 0, 0.8);
+}
+
+.teal {
+    background-color: teal;
+    box-shadow: 0 0 12px rgba(0, 128, 128, 0.8);
+}
+
+.gray {
+    background-color: gray;
+    box-shadow: 0 0 12px rgba(128, 128, 128, 0.8);
 }
 
 button {
