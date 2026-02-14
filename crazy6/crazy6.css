@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #141e30, #243b55);
+    transition: background 0.6s ease;
+    overflow: hidden;
+    gap: 2rem;
+}
+
+.mood-buttons {
+    gap: 2rem;
+    display: flex;
+    margin:1.2rem;
+}
+
+.mood-card {
+    width: 140px;
+    height: 140px;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s ease, box-shadow 0.3s ease, transform 0.1s ease;
+}
+
+.mood-card .emoji-img {
+    width: 90px;
+    height: 90px;
+    margin-bottom: 8px;
+    border-radius: 50%;
+}
+
+.mood-card:hover {
+    background: rgba(255, 255, 255, 0.15);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.4), 0 0 20px rgba(255,255,255,0.15);
+}
+
+.mood-card:active {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 rgba(0,0,0,0.5);
+}
+
+.mood-card.active {
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 0 rgba(255,255,255,0.3);
+}
+
+.player {
+    width: 500px;
+    padding: 30px;
+    border-radius: 30px;
+    background: rgba(255,255,255,0.08);
+    backdrop-filter: blur(25px);
+    box-shadow: 0 25px 50px rgba(0,0,0,0.5);
+    text-align: center;
+    color: white;
+}
+
+.cover {
+    width: 280px;
+    height: 280px;
+    margin: auto;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #ffffff33, #ffffff11);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+}
+
+.cover img {
+    width: 250px;
+    height: 250px;
+    border-radius: 15px;
+}
+
+.song-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.song-mood {
+    font-size: 14px;
+    opacity: 0.7;
+    margin-bottom: 15px;
+}
+
+.progress-container {
+    width: 90%;
+    height: 6px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 15px 20px;
+}
+
+.progress {
+    height: 100%;
+    width: 0%;
+    background: white;
+    border-radius: 10px;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.controls button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    background: rgba(255,255,255,0.15);
+    color: white;
+    transition: 0.3s;
+}
+
+.controls button:hover {
+    background: rgba(255,255,255,0.3);
+    transform: scale(1.1);
+}
+
+.play-btn img {
+    width: 30px;
+    height: 30px;
+}

@@ -17,7 +17,7 @@ function addTask() {
             text,
             done: false,
             roast: "",
-            timeLeft: 600, // 10 minutes in seconds
+            timeLeft: 10, // 10  seconds
             timerId: null
         };
         startTimer(task);

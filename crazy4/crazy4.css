@@ -1,0 +1,97 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* prevents touching edges on small screens */
+    background: linear-gradient(135deg, #667eea, #764ba2);
+}
+
+/* Glass Card */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-radius: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 2rem;
+}
+
+#excuse {
+    font-size: 1.1rem;
+    margin-bottom: 25px;
+    min-height: 60px;
+    line-height: 1.5;
+}
+
+/* Glass Button */
+button {
+    padding: 12px 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    backdrop-filter: blur(6px);
+    transition: all 0.2s ease;
+}
+
+button:hover {
+    background: rgba(255, 255, 255, 0.35);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.25);
+}
+
+button:active {
+    transform: scale(0.97);
+}
+
+/* 📱 Mobile Optimization */
+@media (max-width: 480px) {
+    .container {
+        padding: 25px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    #excuse {
+        font-size: 1rem;
+    }
+
+    button {
+        width: 60%;
+        font-size: 0.95rem;
+    }
+}
+
+/* 📲 Tablet Optimization */
+@media (min-width: 481px) and (max-width: 768px) {
+    .container {
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+}
