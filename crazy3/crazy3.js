@@ -1,3 +1,4 @@
+// storing data on array
 const roasts = [
     "Still waiting… just like your future employer.",
     "Your notes are auditioning for 'Worst Paper Pile 2026'.",
