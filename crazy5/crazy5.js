@@ -1,3 +1,4 @@
+// js code to accept the elements by using id
 const display = document.getElementById("display");
 const sarcasm = document.getElementById("sarcasm");
 
