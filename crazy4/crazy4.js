@@ -1,3 +1,4 @@
+// storing in an array format
 const who = [
     "My dog",
     "My grandma",

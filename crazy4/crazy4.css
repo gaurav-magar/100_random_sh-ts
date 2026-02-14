@@ -42,7 +42,6 @@ h1 {
     line-height: 1.5;
 }
 
-/* Glass Button */
 button {
     padding: 12px 20px;
     border-radius: 10px;
@@ -65,7 +64,6 @@ button:active {
     transform: scale(0.97);
 }
 
-/* 📱 Mobile Optimization */
 @media (max-width: 480px) {
     .container {
         padding: 25px;
