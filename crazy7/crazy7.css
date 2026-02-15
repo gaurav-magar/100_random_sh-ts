@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: radial-gradient(circle at 20% 20%, #1f3b4d, #0f2027 60%);
+    color: #fff;
+}
+
+.card {
+    position: relative;
+    width: 90%;
+    max-width: 500px;
+    padding: 50px 30px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(22px);
+    -webkit-backdrop-filter: blur(22px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.5),
+        inset 0 0 20px rgba(255, 255, 255, 0.15);
+    text-align: center;
+    transition: 0.4s ease-in-out;
+}
+
+.card:hover{
+    transform: translateY(-10px);
+}
+
+.card h1 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    letter-spacing: 1px;
+    font-weight: 800;
+}
+
+.card p {
+    font-family: 500;
+    font-size: 18px;
+    padding: 20px 20px 50px 20px;
+    min-height: 60px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+button {
+    padding: 12px 28px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background: linear-gradient(135deg, #00c6ff, #0072ff);
+    color: #fff;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 0 #0005, 0 6px 0 rgba(0, 114, 255, 0.4);
+}
+
+button:active {
+    transform: translateY(4px);
+    box-shadow: 0 0 0 #0005, 0 0 0 rgba(0, 114, 255, 0.4);
+}
