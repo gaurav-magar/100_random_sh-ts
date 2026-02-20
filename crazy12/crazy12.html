@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mini Code Editor With Output Panel</title>
+  <link rel="stylesheet" href="crazy12.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <h2>⚡ Mini Code Editor</h2>
+    <button id="run">Run </button>
+    <button id="openOutput">Open Output </button>
+  </div>
+
+  <div class="editor-container">
+    <div class="panel">
+      <h3>HTML</h3>
+      <textarea id="htmlCode"></textarea>
+    </div>
+
+    <div class="panel">
+      <h3>CSS</h3>
+      <textarea id="cssCode"></textarea>
+    </div>
+
+    <div class="panel">
+      <h3>JS</h3>
+      <textarea id="jsCode"></textarea>
+    </div>
+  </div>
+
+  <div id="outputContainer">
+    <button id="closeOutput">Close</button>
+    <iframe id="output"></iframe>
+  </div>
+
+  <script src="crazy12.js"></script>
+</body>
+</html>
