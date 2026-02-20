@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #111827;
+}
+
+.display {
+    width: 80%;
+    min-height: 120px;
+    margin-bottom: 25px;
+    padding: 20px;
+    font-size: 20px;
+    color: white;
+
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    box-shadow:
+        0 8px 32px rgba(0, 0, 0, 0.3);
+
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+}
+
+.keyboard {
+    background: #1f2937;
+    padding: 25px;
+    border-radius: 12px;
+}
+
+/* 14-unit real keyboard grid */
+.row {
+    display: grid;
+    grid-template-columns: repeat(14, 1fr);
+    gap: 6px;
+    margin-bottom: 6px;
+}
+
+.key {
+    height: 55px;
+    background: #374151;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+
+    box-shadow:
+        0 5px 0 #1f2937,
+        0 6px 10px rgba(0, 0, 0, 0.5);
+
+    transition: 0.05s;
+}
+
+
+.key.active {
+    transform: translateY(5px);
+    box-shadow:
+        0 1px 0 #1f2937,
+        0 2px 4px rgba(0, 0, 0, 0.5);
+}
