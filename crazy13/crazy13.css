@@ -1,0 +1,31 @@
+body {
+    margin: 0;
+    overflow: hidden;
+    background: #0b0b0b;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    z-index: 10;
+    pointer-events: none;
+    font-size: 36px;
+    background: linear-gradient(90deg, #ff7eb3, #7afcff);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+p {
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    z-index: 10;
+    pointer-events: none;
+    font-size: 18px;
+    color: #aaa;
+}
