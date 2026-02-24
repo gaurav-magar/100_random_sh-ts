@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+    overflow: hidden;
+    color: white;
+    transition: background 1s ease;
+}
+
+.container {
+    width: 560px;
+    padding: 28px 28px 20px 60px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(25px);
+    -webkit-backdrop-filter: blur(25px);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 18px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 2.5rem;
+}
+
+.question {
+    margin-bottom: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.02rem;
+}
+
+.question p {
+    font-size: 1.2rem;
+    margin-bottom: 6px;
+    opacity: 0.85;
+    font-weight: 600;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.options {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-left: 2rem;
+}
+
+.options label {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.06);
+    cursor: pointer;
+    font-size: 1.02rem;
+    transition: 0.3s ease;
+    position: relative;
+}
+
+.options label:hover {
+    background: rgba(255, 255, 255, 0.18);
+}
+
+.options input:checked+span {
+    color: cyan;
+    text-shadow: 0 0 8px cyan;
+}
+
+button {
+    margin-left: 120px;
+    width: 50%;
+    margin-top: 14px;
+    padding: 10px;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+    background: linear-gradient(90deg, cyan, #00bfff);
+    box-shadow: 0 8px 0 #0005, 0 6px 0#00bfff;
+}
+
+button:active {
+    box-shadow: 0 0px 0 #0005, 0 0px 0#00bfff;
+    transform: scale(0.97);
+}
+
+.loading {
+    margin-top: 10px;
+    text-align: center;
+    opacity: 0;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.4s ease;
+}
+
+.result {
+    margin-top: 16px;
+    text-align: center;
+    opacity: 0;
+    transition: 1s ease;
+}
+
+.result h2 {
+    margin-bottom: 6px;
+}
+
+.aura {
+    position: absolute;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    filter: blur(150px);
+    background: cyan;
+    opacity: 0;
+    transition: 2s ease;
+    z-index: 0;
+}
+
+.waves {
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    opacity: 0;
+    z-index: 0;
+}
+
+.wave {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background: rgba(0, 255, 255, 0.12);
+    animation: pulse 4s infinite;
+}
+
+.wave:nth-child(2) {
+    animation-delay: 1.2s;
+}
+
+.wave:nth-child(3) {
+    animation-delay: 2.4s;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(0.5);
+        opacity: 0.6;
+    }
+
+    100% {
+        transform: scale(2.5);
+        opacity: 0;
+    }
+}
