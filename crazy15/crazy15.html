@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart Compliment Engine</title>
+  <link rel="stylesheet" href="crazy15.css">
+</head>
+<body>
+  <div class="bg"></div>
+
+  <div class="container">
+    <div class="left">
+      <div class="rgb-text">
+        <h2>Smart Compliment Engine</h2>
+        <p>Your Data. Your Energy. Your Compliment.</p>
+      </div>
+    </div>
+
+    <div class="right">
+      <h1>Smart Compliment Engine</h1>
+      <form id="wishForm">
+        <div class="field">
+          <input type="text" id="name" placeholder="Enter Birthday Name" required>
+        </div>
+
+        <div class="field">
+          <input type="number" id="age" placeholder="Enter Age (Optional)">
+        </div>
+
+        <div class="field">
+          <select id="category" required>
+            <option value="" disabled selected>Select category</option>
+            <option value="coding">Coding Related</option>
+            <option value="design">Design Related</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+        <button type="submit" class="btn">Generate Wish</button>
+      </form>
+    </div>
+</div>
+<div id="modal" class="modal-overlay">
+  <div class="modal-box">
+    <span class="modal-close">&times;</span>
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+
+  <script src="crazy15.js"></script>
+</body>
+</html>
