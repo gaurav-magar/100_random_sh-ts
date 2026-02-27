@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0f0f0f;
+    color: #f1f1f1;
+    scroll-behavior: smooth;
+}
+
+.terminal {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: black;
+}
+
+.terminal-box {
+    background: #111;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #00ff88;
+    width: 80%;
+    max-width: 600px;
+}
+
+.green {
+    color: #00ff88;
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    background: #111;
+    padding: 15px;
+    z-index: 1000;
+    cursor: pointer;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00ff88;
+}
+
+.section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+.section h2 {
+    margin-bottom: 30px;
+    font-size: 2rem;
+    color: #00ff88;
+}
+
+.cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    cursor: pointer;
+}
+
+.card {
+    background: #1a1a1a;
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 15px #00ff88;
+}
+
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.skill {
+    position: relative;
+    background: #1a1a1a;
+    padding: 15px 30px;
+    border-radius: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        background 0.3s ease,
+        color 0.3s ease;
+}
+
+.skill:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 0 20px #00ff88;
+    background: linear-gradient(45deg, #00ff88, #00ffaa);
+    color: black;
+}
+
+.skill::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 50%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: skewX(-20deg);
+    transition: left 0.5s ease;
+}
+
+.skill:hover::before {
+    left: 120%;
+}
+
+@media(max-width: 768px) {
+    .cards,.skills {
+        flex-direction: column;
+        align-items: center;
+    }
+}
