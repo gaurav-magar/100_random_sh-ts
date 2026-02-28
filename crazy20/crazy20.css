@@ -1,0 +1,144 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.desktop {
+    height: 100vh;
+    background: #0078d4;
+    color: white;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.icon {
+    width: 80px;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.fa-folder {
+    color: #F3D250;
+}
+
+.icon span {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.window {
+    width: 400px;
+    background: #222;
+    border-radius: 8px;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    display: none;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+}
+
+.window-header {
+    background: #333;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    cursor: move;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.window-body {
+    padding: 20px;
+}
+
+
+.close-btn {
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background 0.2s ease, color 0.2s ease;
+}
+
+.close-btn:hover {
+    background: red;
+    color: white;
+}
+
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background: rgba(20, 20, 20, 0.9);
+    backdrop-filter: blur(10px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px 0 50px;
+    color: white;
+}
+
+.start-btn {
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.start-menu {
+    position: absolute;
+    bottom: 60px;
+    left: 15px;
+    width: 220px;
+    background: rgba(30, 30, 30, 0.95);
+    backdrop-filter: blur(15px);
+    border-radius: 12px;
+    padding: 10px 0;
+    display: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+    animation: fadeIn 0.2s ease;
+}
+
+
+.menu-item {
+    padding: 12px 20px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
+.menu-item:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.taskbar-right {
+  text-align: right;
+  font-size: 13px;
+  line-height: 1.2;
+  color: white;
+}

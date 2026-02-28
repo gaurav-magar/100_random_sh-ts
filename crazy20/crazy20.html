@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>OS portfolio</title>
+    <link rel="stylesheet" href="crazy20.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+    <div class="desktop">
+
+        <div class="icon" onclick="openWindow('aboutWindow')">
+            <i class="fa-solid fa-folder"></i>
+            <span>About</span>
+        </div>
+
+        <div class="icon" onclick="openWindow('projectsWindow')">
+            <i class="fa-solid fa-folder"></i>
+            <span>Projects</span>
+        </div>
+
+        <div class="icon" onclick="openWindow('skillsWindow')">
+            <i class="fa-solid fa-folder"></i>
+            <span>Skills</span>
+        </div>
+
+        <div class="icon" onclick="openWindow('contactWindow')">
+            <i class="fa-solid fa-folder"></i>
+            <span>Contact</span>
+        </div>
+
+        <div class="window" id="aboutWindow">
+            <div class="window-header">
+                <span>About Me</span>
+                <button class="close-btn" onclick="closeWindow('aboutWindow')"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="window-body">
+                <h2>Gourav</h2>
+                <p>Computer Science Student</p>
+                <p>Frontend & Backend Developer</p>
+            </div>
+        </div>
+
+        <div class="window" id="projectsWindow">
+            <div class="window-header">
+                <span>Projects</span>
+                <button class="close-btn" onclick="closeWindow('projectsWindow')"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="window-body">
+                <ul>
+                    <li>Amazon Clone</li>
+                    <li>Daraz Clone</li>
+                    <li>Terminal Portfolio</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="window" id="skillsWindow">
+            <div class="window-header">
+                <span>Skills</span>
+                <button class="close-btn" onclick="closeWindow('skillsWindow')"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="window-body">
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>MongoDB</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="window" id="contactWindow">
+            <div class="window-header">
+                <span>Contact</span>
+                <button class="close-btn" onclick="closeWindow('contactWindow')"><i class="fa-solid fa-x"></i></button>
+            </div>
+            <div class="window-body">
+                <p>Email: saurav@email.com</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="taskbar">
+
+        <div class="start-btn" onclick="toggleMenu()">
+            <i class="fa-brands fa-windows"></i>
+        </div>
+
+        <div class="taskbar-right">
+            <div id="clock"></div>
+            <div id="date"></div>
+        </div>
+        <div class="start-menu" id="startMenu">
+            <div class="menu-item" onclick="openWindow('aboutWindow')"> <i class="fa-solid fa-folder"></i>
+                About</div>
+            <div class="menu-item" onclick="openWindow('projectsWindow')"> <i class="fa-solid fa-folder"></i>
+                Projects</div>
+            <div class="menu-item" onclick="openWindow('skillsWindow')"> <i class="fa-solid fa-folder"></i>
+                Skills</div>
+            <div class="menu-item" onclick="openWindow('contactWindow')"> <i class="fa-solid fa-folder"></i>
+                Contact</div>
+        </div>
+
+    </div>
+
+    <script src="crazy20.js"></script>
+</body>
+
+</html>
