@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Data Structure Visualizer</title>
+  <link rel="stylesheet" href="crazy23.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <div class="controls">
+      <h2>Data Structure Visualizer</h2>
+
+      <label>Select Structure</label>
+      <select id="dsSelector">
+        <option value="stack">Stack</option>
+        <option value="queue">Queue</option>
+        <option value="sorting">Sorting</option>
+      </select>
+
+      <input type="number" id="valueInput" placeholder="Enter value">
+
+      <div id="actionButtons">
+        <button onclick="addElement()">Insert</button>
+        <button onclick="removeElement()">Remove</button>
+      </div>
+
+      <div id="sortingButtons" style="display:none;">
+        <button onclick="generateArray()">Generate</button>
+        <button onclick="bubbleSort()">Bubble Sort</button>
+      </div>
+
+      <label>Speed</label>
+      <input type="range" min="50" max="1000" value="300" id="speedControl">
+
+      <button class="reset" onclick="resetAll()">Reset</button>
+    </div>
+
+    <div class="visualization" id="visualization"></div>
+
+  </div>
+
+<script src="crazy23.js"></script>
+</body>
+</html>
