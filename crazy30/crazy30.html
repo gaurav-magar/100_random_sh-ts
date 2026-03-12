@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Linked List Visualizer</title>
+    <link rel="stylesheet" href="crazy30.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Linked List Visualizer</h1>
+
+        <div class="controls">
+            <input type="number" id="valueInput" placeholder="Enter value">
+            <div class="button_collection">
+                <button onclick="insertNode()">Insert</button>
+                <button onclick="deleteNode()">Delete</button>
+                <button onclick="searchNode()">Search</button>
+                <button onclick="resetList()">Reset</button>
+            </div>
+        </div>
+
+        <div id="listContainer"></div>
+
+        <p id="status">Status: Ready</p>
+
+    </div>
+
+    <script src="crazy30.js"></script>
+</body>
+
+</html>

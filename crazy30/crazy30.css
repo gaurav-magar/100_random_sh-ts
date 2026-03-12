@@ -1,0 +1,136 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Segoe UI, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f172a, #1e293b);
+  color: #f1f5f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1000px;
+  background: rgba(2, 6, 23, 0.85);
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+  text-align: center;
+  backdrop-filter: blur(12px);
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  color: #38bdf8;
+  letter-spacing: 1px;
+}
+
+.controls {
+  margin: 20px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.controls input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  outline: none;
+  background: #1e293b;
+  color: #f1f5f9;
+  transition: 0.3s;
+  width: 100%;
+  max-width: 500px;
+}
+
+.controls input:focus {
+  border-color: #38bdf8;
+  box-shadow: 0 0 8px #38bdf8;
+}
+
+.button_collection{
+    display: flex;
+    gap: 40px;
+}
+button {
+  padding: 15px 20px;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(59, 130, 246, 0.4);
+}
+
+#listContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 14px;
+  margin-top: 20px;
+}
+
+.node {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 18px;
+  position: relative;
+  transition: transform 0.3s, background 0.3s;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+}
+
+.node:hover {
+  transform: scale(1.1);
+}
+
+.arrow {
+  font-size: 28px;
+  color: #94a3b8;
+  transition: 0.3s;
+}
+
+.highlight {
+  background: #facc15 !important;
+  box-shadow: 0 0 15px #facc15;
+}
+
+.found {
+  background: #22c55e !important;
+  box-shadow: 0 0 15px #22c55e;
+}
+
+.delete {
+  background: #ef4444 !important;
+  box-shadow: 0 0 15px #ef4444;
+}
+
+#status {
+  margin-top: 20px;
+  color: #cbd5f5;
+  font-size: 1.1rem;
+  font-style: italic;
+}
