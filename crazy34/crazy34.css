@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Segoe UI;
+}
+
+body {
+    background: #0f172a;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 8px;
+    background: #3b82f6;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #2563eb;
+}
+
+.graph {
+    position: relative;
+    width: 600px;
+    height: 400px;
+    margin: auto;
+}
+
+.node {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #1e293b;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    border: 2px solid #60a5fa;
+    transition: 0.4s;
+}
+
+.node.visited {
+    background: #22c55e;
+}
+
+.node.active {
+    background: #f59e0b;
+}
+
+/* Node Positions */
+
+#A {
+    top: 20px;
+    left: 270px;
+}
+
+#B {
+    top: 120px;
+    left: 100px;
+}
+
+#C {
+    top: 120px;
+    left: 440px;
+}
+
+#D {
+    top: 250px;
+    left: 40px;
+}
+
+#E {
+    top: 250px;
+    left: 270px;
+}
+
+#F {
+    top: 250px;
+    left: 500px;
+}
