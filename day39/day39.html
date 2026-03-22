@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sort Comparison</title>
+    <link rel="stylesheet" href="day39.css">
+</head>
+
+<body>
+
+    <h1>Quick Sort vs Merge Sort</h1>
+
+    <div class="controls">
+        <input type="text" id="arrayInput" placeholder="Enter numbers (e.g. 5,3,8,1)">
+        <button onclick="generateArray()">Generate</button>
+        <button onclick="startSorting()">Start Sorting</button>
+    </div>
+
+    <div class="container">
+        <div>
+            <h2>Quick Sort</h2>
+            <div id="quick-container" class="bar-container"></div>
+            <p id="quick-time">Time: 0 ms</p>
+
+        </div>
+
+        <div>
+            <h2>Merge Sort</h2>
+            <div id="merge-container" class="bar-container"></div>
+            <p id="merge-time">Time: 0 ms</p>
+        </div>
+    </div>
+    <script src="day39.js"></script>
+</body>
+
+</html>
